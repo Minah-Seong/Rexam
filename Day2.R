@@ -23,8 +23,10 @@ v1 = 1:10
 1:10 -> v1
 print(v1)
 v1
+
 1:100
 100:1
+
 v2 <- v1 + 100; v2
 v3 <- v1 * 10; v3
 (v2 <- v1 + 100)
@@ -115,7 +117,9 @@ rainfall <- c(21.6, 23.6, 45.8, 77.0,
               137.6, 49.3, 53.0, 24.9)
 rainfall > 100
 rainfall[rainfall > 100]
-which(rainfall > 100)
+which(rainfall > 100) #일치하는 수 위치
+
+
 month.name[which(rainfall > 100)]
 month.abb[which(rainfall > 100)]
 month.korname <- c("1월","2월","3월",
@@ -127,7 +131,6 @@ which.max(rainfall)
 which.min(rainfall)
 month.korname[which.max(rainfall)]
 month.korname[which.min(rainfall)]
-
 
 sample(1:20, 3)
 sample(1:45, 6)
