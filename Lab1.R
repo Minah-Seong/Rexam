@@ -49,9 +49,9 @@ paste(score,myFriend,sep='-')
 
 names(score) <- myFriend
 
-names(score)[which.max(score)]
-names(score)[which.min(score)]
-names(score)[which(score>10)]
+myFriend[which.max(score)]
+myFriend[which.min(score)]
+myFriend[which(score>10)]
 
 
 # 문제 6
@@ -60,12 +60,9 @@ count <- sample(1:100,7)
 week.korname <- c('일요일','월요일','화요일','수요일','목요일','금요일','토요일')
 paste(week.korname,count,sep=' : ')
 
-names(count) <- week.korname
-count
-
-names(count)[which.max(count)]
-names(count)[which.min(count)]
-names(count)[which(count>50)]
+week.korname[which.max(count)]
+week.korname[which.min(count)]
+week.korname[which(count>50)]
 
 
 
