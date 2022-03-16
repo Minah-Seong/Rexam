@@ -40,6 +40,9 @@ alpha2
 alpha3 <- cbind(alpha,c('s','p'))
 alpha3
 
+
+# 문제 6
+
 a <- array(1:24, dim=c(2,3,4))
 
 a[2,3,4]
