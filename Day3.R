@@ -79,7 +79,6 @@ levels(gender2)
 
 # 내장 데이터셋
 data()
-iris
 head(iris)
 tail(iris) 
 View(iris)
