@@ -33,11 +33,11 @@ v3 <- v1 * 10; v3
 ls() # list
 v4 <- c(10, 5, 7, 4, 15, 1)
 v5 <- c(100, 200, 300, '사백')
-seq(1, 10)
+seq(1, 10) # 시퀀스 : 1 부터 10까지
 seq(1, 10, 2)
 seq(0, 100, 5)
 
-rep(1, 100)
+rep(1, 100) # repeat : 1을 100개
 rep(1:3, 5)
 rep(1:3, times=5) # 키워드 파라미터
 rep(1:3, each=5)
@@ -235,76 +235,3 @@ a1[,,3]
 a1[,2,]
 a1[1,,]
 a1 * 100
-
-# factor 실습
-
-score <- c(1,3,2,4,2,1,3,5,1,3,3,3)
-class(score)
-summary(score)
-
-f_score <- factor(score)
-class(f_score)
-f_score
-summary(f_score)
-levels(f_score)
-
-
-f_score1 <- as.factor(score)
-class(f_score1)
-f_score1
-summary(f_score1)
-levels(f_score1)
-
-
-plot(score)
-plot(f_score)
-
-
-data1 <- c("월","수","토","월", "수", "화", "수", "수",
-           "목","화")
-data1
-class(data1)
-summary(data1)
-day1 <- factor(data1)
-day1
-class(day1)
-summary(day1)
-levels(day1)
-
-week.korabbname <- c("일", "월", "화",
-                     "수", "목", "금", "토")
-day2 <- factor(data1, 
-               levels=week.korabbname)
-day2
-summary(day2)
-levels(day2)
-
-
-
-btype <- factor(
-  c("A", "O", "AB", "B", "O", "A", "O"), 
-  levels=c("A", "B", "O"))
-btype
-summary(btype)
-levels(btype)
-
-
-
-gender1 <- factor(c(1,2,1,1,1,2,1,2), 
-                  levels=c(1,2), 
-                  labels=c("남성", "여성"))
-gender1
-summary(gender1)
-levels(gender1)
-
-
-g.data <- c('F', 'M', 'F', 'F', 'M')
-summary(g.data)
-summary(as.factor(g.data))
-
-gender2 <- factor(g.data, 
-                  levels=c('F','M'), 
-                  labels=c(0, 1))
-gender2
-summary(gender2)
-levels(gender2)
