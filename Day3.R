@@ -72,6 +72,9 @@ summary(gender2)
 levels(gender2)
 
 
+# R 구문보충 - 데이터프레임 
+
+
 
 
 # 내장 데이터셋
@@ -211,7 +214,7 @@ emp["ename"]
 emp[,c(2,3,6)]
 emp[,c("ename","job","sal")]
 subset(emp,select = c(ename, job, sal))
-?subset
+?subset # 부분집합 함수
 # emp에서 1,2,3 행 들만
 emp[1:3,]
 emp[c(1,2,3),]
@@ -220,7 +223,7 @@ head(emp)
 head(emp, n=3) # n의 기본값 6
 # ename이 "KING"인 직원의 모든 정보
 emp[9,] 
-emp$ename=="KING"
+emp$ename=="KING" # 몇번째에 있는가? T,F값
 emp[c(F,F,F,F,F,F,F,F,T,F,F,F,
       F,F,F,F,F,F,F,F),]
 emp[emp$ename=="KING",]
