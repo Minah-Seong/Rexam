@@ -73,6 +73,15 @@ exam5 <- function(x,y='#'){
 
 exam5(-1,'*')
 
+# ------------------------------------------ 해답
+
+exam5 <- function(num, ch="#"){
+  if(num > 0){
+    cat(rep(ch, num),'\n', sep='')
+  }
+  return(NULL)
+}
+
 
 # 문제 6
 
