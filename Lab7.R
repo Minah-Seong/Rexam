@@ -40,7 +40,7 @@ vmSum <- function(x){
 
 vmSum(c(1,2,3))
 vmSum(c('1','2','3'))
-vmSum(list(1:3))
+vmSum(matrix(1:4))
 
 
 # 문제 3
@@ -91,6 +91,27 @@ mySum <-function(x){
 }
 
 mySum(c(1,3,NA,5,7,9))
+
+# 짝수번째 / 홀수번째 합 구해야함 (다시 구하기)
+
+mySum <- function(x){
+  nums <- list()
+  even_vec <- c()
+  odd_vec <- c()
+  if(is.vector(x)  && !is.list(x) && is.numeric(x)){
+    x[is.na(x)] <- min(x, na.rm = T)
+    odd_vec <- x[seq(1,length(x),2)]
+    even_vec <- x[seq(2,length(x),2)]
+    nums$evenSum <- sum(even_vec)
+    nums$oddSum <- sum(odd_vec)
+    return(nums)
+  }else{
+    stop('벡터만 처리 가능!!')
+  }
+}
+
+mySum(c(1,3,NA,5,7,9))
+
 
 # 문제 5
 
