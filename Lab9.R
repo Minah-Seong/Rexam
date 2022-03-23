@@ -36,6 +36,12 @@ subtitle1
 green <- html_nodes(text, "ul > li:nth-child(3)")
 html_text(green)
 
+# 해답 ---------------------------------
+
+green <- html_nodes(text, "ul > [style$=green]") #속성명 = 속성값 / [] : 찾아라 / $ > 끝이 ~로 끝나는
+html_text(green)
+
+
 
 # 두번째 <h2> 태그의 컨텐츠
 
