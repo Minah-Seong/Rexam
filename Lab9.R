@@ -42,7 +42,6 @@ green <- html_nodes(text, "ul > [style$=green]") #속성명 = 속성값 / [] : �
 html_text(green)
 
 
-
 # 두번째 <h2> 태그의 컨텐츠
 
 subtitle2 <- html_text(html_nodes(text, "h2:nth-of-type(2)"))
