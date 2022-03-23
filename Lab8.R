@@ -16,6 +16,8 @@ memo[5] <- gsub("[!<>]|[[:digit:]]", "", memo[5])
 memo[6] <- gsub("[[:space:]]", "", memo[6]) 
 memo[7] <- tolower(memo[7])
 
+write(memo, file="memo_new.txt")
+
 
 # 문제 3
 
