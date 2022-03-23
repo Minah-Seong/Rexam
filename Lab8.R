@@ -6,7 +6,6 @@ sapply(v, function(a) LETTERS[a])
 
 # 문제 2
 
-getwd()
 memo <- readLines("data/memo.txt", encoding = "UTF-8")
 memo[1] <- gsub("[&$!#@%]", "", memo[1]) 
 memo[2] <- gsub("e", "E", memo[2])
