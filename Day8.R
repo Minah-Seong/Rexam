@@ -35,6 +35,7 @@ for(i in 1:length(img.src)){
   writeBin(content(res, 'raw'), paste('c:/Temp/', img.src[i], sep=""))
 } 
 
+
 # [ 예제14 ]
 # SNS의 Open API 활용
 library(httr)
@@ -56,6 +57,7 @@ query <- URLencode("봄")
 url <- paste0(searchUrl, "?query=", query, "&display=100")
 doc <- GET(url, add_headers("Content_Type" = "application/xml",
                             "X-Naver-client-Id" = Client_ID, "X-naver-Client-Secret" = Client_Secret))
+
 
 # 블로그 내용에 대한 리스트 만들기		
 doc2 <- xmlParse(doc, encoding="UTF-8")
