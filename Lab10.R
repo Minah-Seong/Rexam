@@ -12,4 +12,4 @@ daumnews <- data.frame(newstitle,newscategory)
 View(daumnews)
 
 getwd()
-write.csv(daumnews,file='daumnews.csv')
+write.csv(daumnews,file='output/daumnews.csv')
