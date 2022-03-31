@@ -42,8 +42,11 @@ emp %>% arrange(desc(sal)) %>% head(1)
 emp %>% rename(salary=sal, commrate=comm) -> empnew
 str(empnew)
 
-# 문제 13 - 못 품
-
+# 문제 13
+emp %>%
+  count(deptno) %>%
+  filter(n == max(n)) %>%
+  select(deptno)
 
 # 문제 14
 emp %>%
@@ -128,3 +131,7 @@ mpg3 %>% group_by(class) %>% summarise(cty=mean(cty))
 
 # 문제 20
 
+mpg %>%
+  filter(manufacturer == 'audi') %>%
+  arrange(desc(hwy)) %>%
+  head(5)
