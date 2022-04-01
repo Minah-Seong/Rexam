@@ -31,7 +31,9 @@ ggplot(product_click, aes(x = v2, fill=v2)) +
 data("GNI2014")
 str(GNI2014)
 ?treemap
+
+png(filename="output/result4.png", height=600, width=800, bg="white")
+
 treemap(GNI2014, vSize="population", index=c("continent", "iso3"), title="전세계 인구 정보", fontfamily.title="maple", fontsize.title=20, border.col="green")
 
-dev.copy(png, "output/result4.png")
 dev.off()
